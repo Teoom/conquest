@@ -1,0 +1,40 @@
+.header {
+background-color: #FDFDFB;
+
+}
+
+.header__container { 
+  height:60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.header__list {
+  display: flex;
+  align-self: center;
+}
+
+.header__link {
+  color: $hdc;
+  margin-right: 65px;
+  @include font(14px, 1.17, 400);
+
+}
+
+.header__widgets {
+
+}
+
+// BURGER
+
+[type="checkbox"], [for="burger"] {
+  display: none;
+}
+
+.header__title {
+  display: none;
+}
+
+

@@ -1,0 +1,474 @@
+@media (max-width: 1166px) {
+  .sign-2 {
+    left: 370px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .card__circle {
+    top: 82px;
+  }
+}
+
+@media (max-width: 992px) {
+  .collection {
+    padding: 236px 0 180px;
+  }
+  .sign-1 {
+    left: 0;
+  }
+
+  .sign-2 {
+    display: none;
+  }
+
+  .sign-3 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -30px;
+    z-index: 20;
+  }
+  .sing-lf,
+  .sing-rt {
+    width: 30px;
+  }
+
+  .follow__banner p {
+    margin-bottom: 70px;
+  }
+
+  .popular__container {
+    padding: 20px 20px 50px;
+  }
+
+  .follow {
+    padding: 60px 0;
+  }
+
+  .footer {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  .header__link {
+    margin-right: 30px;
+  }
+
+  .collection__photo > img {
+    left: -122px;
+  }
+
+  .collection__photo .collection__back {
+    left: -276px;
+  }
+
+  .quality__banner p {
+    font-size: 15px;
+  }
+
+  .follow__banner h2 {
+    margin-bottom: 15px;
+  }
+
+  .follow__banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .sign-1 {
+    left: -100px;
+  }
+
+  .sign-3 {
+    bottom: -64px;
+    left: -150px;
+  }
+}
+
+@media (max-width: 576px) {
+  // BURGER + HEADER MENU
+
+  .header__menu {
+    position: absolute;
+
+    top: 50px;
+    left: -100%;
+    z-index: 5;
+    transition: all 0.3s ease 0s;
+  }
+
+  [for="burger"] {
+    display: block;
+  }
+
+  [for="burger"] {
+    width: 45px;
+    height: 20px;
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: #d4b098;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      display: block;
+      background-color: #d4b098;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  #burger:checked + [for="burger"] + .header__menu {
+    left: 18px;
+  }
+
+  #burger:checked + [for="burger"] > span {
+    transform: scale(0);
+    display: none;
+  }
+
+  #burger:checked + [for="burger"]::before {
+    width: 60%;
+    transform: rotate(45deg);
+    top: 11px;
+  }
+
+  #burger:checked + [for="burger"]::after {
+    width: 60%;
+    transform: rotate(-45deg);
+    bottom: 6px;
+  }
+  //////////////////////
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .button {
+    padding: 23px 29px;
+  }
+
+  .collection__banner h1:before {
+    top: 20px;
+  }
+  .collection__photo > img {
+    height: 750px;
+  }
+
+  .collection__photo .collection__back {
+    height: 700px;
+    top: -228px;
+  }
+
+  .sign-1 {
+    left: -128px;
+    top: -120px;
+  }
+
+  .card__signature p {
+    font-size: 14px;
+  }
+
+  .popular__container {
+    padding: 50px 20px 50px;
+  }
+  .popular__container > a {
+    font-size: 14px;
+  }
+
+  .quality {
+    background: linear-gradient(to right, #f7f5ef 52.5%, #fdfdfb 20%);
+    text-align: center;
+    button {
+    }
+  }
+
+  .quality__container {
+    display: block;
+  }
+
+  .quality__photo {
+    margin: 0 0 50px 0;
+    padding: 0;
+  }
+
+  .quality__count {
+    bottom: -35px;
+    right: 39%;
+  }
+  .quality__banner p {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .follow {
+    padding: 45px 0;
+    text-align: center;
+  }
+  .follow__container {
+    display: block;
+  }
+
+  .follow__banner {
+    margin-bottom: 30px;
+  }
+
+  .follow__banner p {
+    width: 100%;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  // FOOTER
+
+  .footer {
+    padding: 30px 0;
+  }
+  .footer__container {
+    display: block;
+    text-align: center;
+
+    & div:first-child > img {
+      display: none;
+    }
+  }
+
+  .footer__label > img {
+    margin: 0 auto;
+  }
+  .footer__container > div > label {
+    display: block;
+  }
+
+  .footer__label {
+    position: relative;
+    @include font(14px, 1.14, 700);
+    letter-spacing: 2px;
+    color: #fff;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+
+  [for="ft-contact"]::after,
+  [for="ft-company"]::after,
+  [for="ft-buyers"]::after,
+  [for="ft-payment"]::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: no-repeat center/cover
+      url("../img/arrow-up-circle-svgrepo-com.svg");
+    transform: rotate(180deg);
+
+    position: absolute;
+    top: -30%;
+    left: 70%;
+  }
+
+  [for="ft-contact"]::after {
+    top: 30%;
+  }
+
+  #ft-contact:checked + [for="ft-contact"]::after,
+  #ft-company:checked + [for="ft-company"]::after,
+  #ft-buyers:checked + [for="ft-buyers"]::after,
+  #ft-payment:checked + [for="ft-payment"]::after {
+    transform: rotate(0deg);
+  }
+
+  #ft-contact:checked + [for="ft-contact"] + .footer__list {
+    display: block;
+  }
+
+  #ft-company:checked + [for="ft-company"] + .footer__list {
+    display: block;
+  }
+
+  #ft-buyers:checked + [for="ft-buyers"] + .footer__list {
+    display: block;
+  }
+  #ft-payment:checked + [for="ft-payment"] + .footer__list {
+    display: block;
+  }
+
+  .footer__title {
+    display: none;
+  }
+
+  .footer__list {
+    display: none;
+  }
+
+  .footer__list .footer__item:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular__watchs {
+    display: block;
+  }
+
+  .collection {
+    padding: 200px 0 100px;
+  }
+  .collection__photo > img {
+    height: 650px;
+    top: -213px;
+    left: -97px;
+  }
+
+  .collection__photo .collection__back {
+    height: 600px;
+    top: -188px;
+  }
+
+  .collection__banner {
+    margin: 0 11% 0 40px;
+  }
+
+  .collection__banner h1:before {
+    width: 25px;
+    left: -40px;
+  }
+
+  .card img {
+    width: 313px;
+  }
+
+  .card__circle {
+    top: 74px;
+    left: 29px;
+  }
+
+  [for="ft-contact"]::after,
+  [for="ft-company"]::after,
+  [for="ft-buyers"]::after,
+  [for="ft-payment"]::after {
+    left: 75%;
+  }
+
+  .footer__label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  h2 {
+    font-size: 26px;
+  }
+
+  .collection {
+    padding: 80px 0 50px;
+  }
+  .collection__photo > img {
+    left: -84px;
+  }
+
+  .collection__photo .collection__back {
+    height: 534px;
+    top: -188px;
+  }
+
+  .sign-1,
+  .sign-3 {
+    display: none;
+  }
+
+  .quality__count {
+    right: 33%;
+  }
+
+  .quality__banner p {
+    font-size: 13px;
+  }
+  .follow__banner p {
+    font-size: 13px;
+  }
+
+  .footer__label > img {
+    width: 100px;
+  }
+
+  .footer__label {
+    margin-bottom: 20px;
+    font-size: 11px;
+  }
+
+  .footer__link {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__menu {
+    top: 60px;
+  }
+
+  .header__link {
+    font-size: 12px;
+  }
+
+  .collection__banner h1:before {
+    display: none;
+  }
+
+  .collection__banner {
+    margin: 0;
+  }
+
+  .collection__photo > img {
+    left: -48px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .card__circle {
+    top: 56px;
+    left: -16px;
+  }
+
+  .quality__banner p {
+    font-size: 15px;
+  }
+  .follow__banner p {
+    font-size: 16px;
+  }
+
+  [for="ft-contact"]::after, 
+  [for="ft-company"]::after, 
+  [for="ft-buyers"]::after, 
+  [for="ft-payment"]::after {
+    left: 81%;
+  }
+
+}

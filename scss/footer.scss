@@ -1,0 +1,38 @@
+.footer {
+  padding: 67px 0;
+  background-color: $fbc;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer > div {
+  position: relative;
+}
+.footer div:first-child {
+  align-self: baseline;
+}
+
+.footer div:first-child > img {
+  margin-bottom: 32px;
+}
+
+.footer__item {
+
+}
+
+.footer__link {
+  @include font(12px, 1.16, 400);
+  color: rgba(#fff, 0.75);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer__container > div > label {
+  display: none;
+}
+
+
